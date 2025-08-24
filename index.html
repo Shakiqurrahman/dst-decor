@@ -4,11 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DST Decor</title>
-    <link rel="stylesheet" href="src/output.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./src/css/output.css" />
   </head>
   <body>
+    <!-- Swiper Slide Section -->
+    <section class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./src/images/Banner1.png" class="w-full object-cover" alt="Banner 1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./src/images/Banner2.png" class="w-full object-cover" alt="Banner 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./src/images/Banner3.png" class="w-full object-cover" alt="Banner 3" />
+        </div>
+      </div>
+
+      <!-- Pagination (small bar dots at bottom) -->
+      <div class="swiper-pagination"></div>
+    </section>
+
     <!-- Header Section  -->
-    <header class="bg-white py-4">
+    <header class="bg-white py-4 sticky top-0 w-full shadow-sm z-10">
       <div class="flex justify-between max-width items-center">
         <h3 class="text-xl font-bold uppercase">DST Decor</h3>
         <nav>
@@ -69,5 +91,8 @@
       </a>
       </div>
      </section>
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="./src/scripts/index.js"></script>
   </body>
 </html>

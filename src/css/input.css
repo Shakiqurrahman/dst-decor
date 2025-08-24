@@ -18,3 +18,18 @@ html {
 .max-width {
   @apply max-w-[1280px] px-4 mx-auto;
 }
+
+/* Custom pagination style */
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  background: white;
+  opacity: 1 !important; 
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ec4899;
+  width: 40px;
+}
